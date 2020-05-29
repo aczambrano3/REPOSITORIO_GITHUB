@@ -1,0 +1,358 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ejercicios.capitulo.pkg1;
+import java.util.Scanner;
+/**
+ *
+ * @author Anderson
+ */
+public class Ejercicios_Cap3_Bucles {
+    public static void main (String[]args )
+    {
+        Scanner ejercicios = new Scanner(System.in);
+        //EJERCICIO 1
+        /*double num;
+        
+        System.out.println("Ingrese un numero: ");
+        num=ejercicios.nextInt();
+        while(num!=0)
+        {
+            if(num%2==0){ System.out.println("Es par ");}
+            else {System.out.println("Es impar");}
+            if(num>0){ System.out.println("Es positivo ");}
+            else {System.out.println("No es positivo");}
+            num= Math.pow(num, 2);
+            System.out.println("El cuadrado del numero es: "+num);
+            System.out.println("Introduzca otro numero: ");
+            num=ejercicios.nextInt();
+        
+        }*/
+        
+        //EJERCICIO 2
+        
+        
+        /*int num;
+        System.out.print("Ingrese la primera edad: ");
+        num = ejercicios.nextInt();
+        if (num>0)
+        {
+            int sumaEdad=0;
+            double media=0;
+            int contA=1;
+            int mayorEdad=1;
+            while(num>0)
+            {
+                sumaEdad+=num;
+                media=(double)sumaEdad/contA;
+                System.out.print("Escriba otra edad: ");
+                num = ejercicios.nextInt();
+                contA++;
+                if(num>=18)
+                {
+                    mayorEdad++;
+                }
+            }
+            System.out.println("La suma de las edades es: "+sumaEdad);
+            System.out.println("La media de edades es: "+media);
+            System.out.println("Hay "+mayorEdad+" estudiantes mayores de edad");
+        
+            
+        }
+        else 
+        {
+            System.out.println("La primera edad no puede ser negativa, vuelva a ejecutar el programa");
+        
+        }*/
+        
+        
+        //EJERCICIO 3
+        
+        
+        /*int num;
+        int numRandom=(int)(Math.random()*100+1);
+        System.out.print("El juego consiste en escribir un numero entre 1 y 100\n"
+                + "Si quieres salir del juego tienes que escribir -1\n");
+        System.out.println("Ingresa un numero: ");
+        num=ejercicios.nextInt();
+        int cont=1;
+        while(num!=-1)
+        {
+        if(num<numRandom){
+            System.out.println("Escribe un numero mayor");
+            num=ejercicios.nextInt();
+            cont++;
+        }
+        
+        else if(num>numRandom){
+            System.out.println("Escribe un numero menor");
+            num=ejercicios.nextInt();
+            cont++;
+        }
+        if(num==numRandom){System.out.println("Haz acertado");
+            System.out.println("Te tomo "+cont+" intentos para acertar");
+            break;}
+        
+        }     */ 
+        
+        
+        //EJERCICIO 4
+        
+        /*
+        System.out.println("Ingresa un numero: ");
+        int num=ejercicios.nextInt();
+        for(int i=1;i<=num;i++)
+        {
+            System.out.print(i+" ");
+        }*/
+        
+        
+        //EJERCICIO 5
+        
+        
+        /*int min,max,num;
+        System.out.println("Ingrese un valor minimo");
+        min=ejercicios.nextInt();
+        System.out.println("Ingrese un valor maximo");
+        max=ejercicios.nextInt();
+        do {
+            System.out.println("Ingrese un valor que este dentro del rango");
+            num=ejercicios.nextInt();
+        }
+        
+        while(!(num>min && num<max));
+        System.out.println("El numero "+num+" pertenece al rango");*/
+        
+        
+        //EJERCICIO 6
+        
+       // for(int i=1;i<20; i+=2){System.out.print(i+" ");}
+       
+       
+       // EJERCICIO 7
+       
+       
+        /*System.out.println("Ingrese un numero: ");
+        int num=ejercicios.nextInt();
+        int factorial=1;
+        for(int i=num;i>0;i--)
+        {
+            factorial*=i;
+            
+        }
+        System.out.print(factorial+" ");*/
+        
+        
+        //EJERCICIO 8
+        
+        /*System.out.print("Ingrese la altura del arbol: ");
+        int altura= ejercicios.nextInt();
+        int cont = 0;
+        while(altura!=-1)
+        {
+          System.out.println("Altura: "+altura+", numero: "+cont);  
+          cont++;      
+          System.out.print("Ingrese el siguiente arbol: ");
+          altura= ejercicios.nextInt();
+        }*/
+        
+        //EJERCICIO 9
+        
+        /*System.out.print("Ingrese un numero del 1 al 10: ");
+        int num=ejercicios.nextInt();
+        int total=0;
+        if(num>0 &&num<=10)
+        {
+            for(int i=1;i<=10;i++)
+            {
+                total=num*i;
+                System.out.print(total+" ");
+            }
+            
+        }
+        else {System.out.println("Has ingresado un numero incorrecto, vulve a ejecutar el programa");}*/
+        
+        
+        //EJERCICIO 10
+        
+        /*for(int i=1;i<=10;i++)
+        {
+            System.out.println("\nTabla del: "+i);
+            
+            for(int j=1;j<=10;j++)
+            {
+                System.out.print(j*i+" ");
+            }
+        }*/
+        
+        
+        //EJERCICIO 11
+        
+       /* boolean suspensos =false;
+        int cont=0;
+        for(int i=1;i<=5;i++)
+        {
+            System.out.println("Ingrese la primera nota");
+            int nota=ejercicios.nextInt();
+            
+            if(nota<5)
+            {
+                suspensos = true;
+                cont++;
+            }
+        }
+        if(suspensos)
+        {
+            System.out.println("Hay "+cont+" alumnos suspensos");
+        }
+        else{System.out.println("No hay alumnos suspensos");}
+        
+        */
+       
+       //EJERCICIO 12
+       
+        /*System.out.print("Ingrese un numero: ");
+        int num=ejercicios.nextInt();
+        String ast="*";
+        for(int fila=1;fila<=num;fila++)
+        
+        {
+            for(int columna = fila ; columna <=num ;columna++) 
+            {
+            
+                System.out.print(ast);
+            }
+            System.out.println("");
+        }*/
+        
+        //EJERCICIO 13
+        
+        /*System.out.println("Ingresa un numero: ");
+        int num = ejercicios.nextInt();
+        int j, cont=0;
+        boolean primo;
+        for(int i = 1;i<num;i++)
+        {
+            primo=true;
+            j=2;
+        
+        while(j<=i -1 && primo ==true)
+        {
+            if(i%j==0)
+            {
+                primo= false;
+            }
+            j++;
+        
+        }
+        
+        if(primo)
+        {
+            cont++;
+            System.out.println(i+" es primo");
+        }
+        }
+        System.out.println("De 1 a "+num+", hay "+cont+" numeros primos"); */
+        
+        
+        //EJERCICIOS PROPUESTOS
+        // LITERAL 1
+        
+        /*System.out.println("Ingrese un numero de 3 cifras: ");
+        int num=ejercicios.nextInt();
+        int n1=0,n2=0,n3=0;
+        
+        n1=num%10;
+        
+        n2=(num%100)/10;
+        
+        n3=(num%1000)/100;
+        System.out.println(n3+" "+n2+" "+n1);*/
+        
+        //LITERAL 3
+        
+        /*System.out.println("ingrese numero");
+        int num= ejercicios.nextByte();
+        for(int i=0;i<num;i++)
+        {
+            System.out.println("Eco");
+        }*/
+        
+        // LITERAL 4
+        
+        /*System.out.println("ingrese numero el cual sera tomado como que esta dentro de una raiz cuadrada");
+        int num= ejercicios.nextByte();
+        double potencia=0;
+        double cont=0;
+        for(int i =1;i<=num;i++)
+        {
+            
+            potencia = Math.pow(i, 2);
+            if(potencia <num)
+            {
+                System.out.println(potencia+" ");
+                cont++;
+                
+            }
+            
+        }
+        if(potencia > num)
+            {
+                
+                System.out.println("El resto es: "+ (num-Math.pow(cont, 2)));
+            }
+        */
+        
+        // LITERAL 5
+        /*System.out.println("Ingrese el numero de filas");
+        int rows = ejercicios.nextInt(); //Aquí establecemos número de filas Integer.parseInt(args[0]);
+        for(int i =0;i<rows;i++) {
+
+            int number = 1;
+
+            System.out.format("%"+(rows-i)*2+"s","");
+            for(int j=0;j<=i;j++) {
+                System.out.format("%4d",number);
+                number = number * (i - j) / (j + 1);
+            }
+            System.out.println();
+        }*/
+        
+        
+        System.out.print("Ingrese la altura del arbol: ");
+        int num= ejercicios.nextInt();
+        int contador = 0;
+        for(int i = 0; i<num;i++)
+        {
+            if(num%i==0)
+            {
+                contador++;
+            }
+        
+        }
+        if(contador>1){System.out.println("no es numero primo");}
+        if(contador==1){System.out.println("Es numero primo");}
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
